@@ -46,15 +46,15 @@ const TabLayout = () => {
         }}
       >
         <Tabs.Screen
-          name="home"
+          name="search"
           options={{
-            title: "Home",
+            title: "Search",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
                 icon={icons.home}
                 color={color}
-                name="Home"
+                name="Search"
                 focused={focused}
               />
             ),
@@ -75,17 +75,16 @@ const TabLayout = () => {
             ),
           }}
         />
-
         <Tabs.Screen
-          name="create"
+          name="map"
           options={{
-            title: "Create",
+            title: "Map",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
                 icon={icons.plus}
                 color={color}
-                name="Create"
+                name="Map"
                 focused={focused}
               />
             ),
