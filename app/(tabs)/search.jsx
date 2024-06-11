@@ -7,7 +7,11 @@ import useAppwrite from "../../lib/useAppwrite";
 import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
 import { EmptyState, SearchInput, Trending, VideoCard } from "../../components";
 
-import { useGlobalContext } from "../../context/GlobalProvider"; // Adjust the path as necessary
+import { useGlobalContext } from "../../context/GlobalProvider";
+
+import MapboxGL from "@react-native-mapbox-gl/maps";
+
+MapboxGL.setAccessToken("YOUR_MAPBOX_ACCESS_TOKEN");
 
 const Home = () => {
   const { data: posts, refetch } = useAppwrite(getAllPosts);
